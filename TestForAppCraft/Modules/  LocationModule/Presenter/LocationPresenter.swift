@@ -22,6 +22,7 @@ class LocationPresenter: NSObject {
     
     func startUpdate() {
         self.locationManager.delegate = self
+        self.locationManager.allowsBackgroundLocationUpdates = true
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.startUpdatingLocation()

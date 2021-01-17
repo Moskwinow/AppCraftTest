@@ -21,6 +21,7 @@ class LocationViewController: UIViewController {
         presenter.locationOutput = self
     }
     
+    
     @IBAction func locationButtonAction(_ sender: UIButton!) {
         switch state {
         case false:
